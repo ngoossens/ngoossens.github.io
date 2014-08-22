@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="description" content="{{ site.description }}">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.url }}/feed.xml" />
+  </head>
+
+  <body class="home-template">
+      {{ content }}
+
+
+      <footer class="site-footer">
+          <a class="subscribe" href="{{ site.url }}/feed.xml">{% include svg-icons/rss.html %}<span class="tooltip">Subscribe!</span></a>
+          <div class="inner">
+               <section class="copyright"><a href="{{ site.url }}">{{ site.name }}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
+               <section class="poweredby">Made with <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://www.jekyllnow.com/">Jekyll Now</a> and <a href="http://github.com/rosario/kasper">Kasper</a></section>
+          </div>
+      </footer>
+
+      {% include analytics.html %}
+  </body>
+
+</html>

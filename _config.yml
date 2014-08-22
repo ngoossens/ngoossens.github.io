@@ -1,0 +1,61 @@
+#
+# This file contains configuration flags to customize your site
+#
+
+# Name of your site (displayed in the header)
+name: Nick's Blog
+description: Code, architecture and thoughts.
+
+author:
+  name: Nick Goossens
+  bio: I'm a software architect and developer based in Cape Town. I have been the technical co-founder of two start-ups and enjoy presenting at local developer events. When not behind a computer I enjoy trail running, rock climbing and hiking.
+
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: https://avatars1.githubusercontent.com/u/1468852?v=2&s=460
+
+#
+# Flags below are optional
+#
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  email: blog@epicdestination.com
+  github: ngoossens
+  linkedin: nicholasg
+  rss: http://ngoossens.github.io/feed/xml # just type anything here for a working RSS icon, make sure you set the "url" above!
+  stackoverflow: users/192903/nixusg # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+
+# Your disqus shortname, entering this will enable commenting on posts
+disqus: epicdestination
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: UA-54062029-1
+
+# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Used for Sitemap.xml and your RSS feed
+url: http://ngoossens.github.io
+
+#
+# !! You don't need to change any of the configuration flags below !!
+#
+markdown: kramdown
+highlighter: pygments
+permalink: /:title/
+paginate: 15
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  sass_dir: _scss
+  style: :compressed # You might prefer to minify using :compressed
+
+# Use the following plug-ins
+gems:
+  - jemoji # Emoji please!
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md

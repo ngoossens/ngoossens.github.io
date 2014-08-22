@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<main class="content" role="main">
+
+    <article class="post">
+        <header class="post-header">
+            <a id="blog-logo" href="{{site.url}}">
+              <span class="blog-title">{{ site.name }}</span>
+            </a>
+        </header>
+
+        <span class="post-meta">
+        	<time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+       	</span>
+
+        <h1 class="post-title">{{ page.title }}</h1>
+
+        <section class="post-content">
+            {{content}}
+        </section>
+
+        <footer class="post-footer">
+            {% if site.author %}
+                <section class="author">
+                	<header> <a href="{{ site.url }}"> <img class="profile" src="{{ site.avatar }}}" alt="Author's profile picture"></a></header>
+                	<article>
+                		<!-- Author Name -->
+                    	<h4> {{ site.author.name }} </h4>
+                    	<!-- Author Bio -->
+                    	<p>
+                    		{{ site.author.bio }}
+                    	</p>
+                    </article>
+                </section>
+            {% endif %}
+        </footer>
+        {% include disqus.html disqus_identifier=page.disqus_identifier %}
+    </article>
+</main>
