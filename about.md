@@ -15,7 +15,7 @@ and presenting at larger events like Microsoft Tech-Ed.
 When not sitting behind a computer he loves to be in the Mountains most likely trail running,
 rock climbing or hiking.
 
-![Nick Goossens](http://ngoossens.github.io/assets/images/about/nick.jpg)
+![Nick Goossens](http://epicdestination.com/assets/images/about/nick.jpg)
 
 <br/>  
 <br/>  

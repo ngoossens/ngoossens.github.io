@@ -22,7 +22,7 @@ footer-links:
   email: blog@epicdestination.com
   github: ngoossens
   linkedin: nicholasg
-  rss: http://ngoossens.github.io/feed/xml # just type anything here for a working RSS icon, make sure you set the "url" above!
+  rss: http://epicdestination.com/feed/xml # just type anything here for a working RSS icon, make sure you set the "url" above!
   stackoverflow: users/192903/nixusg # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Your disqus shortname, entering this will enable commenting on posts
@@ -33,7 +33,7 @@ google_analytics: UA-54062029-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://ngoossens.github.io
+url: http://epicdestination.com
 
 #
 # !! You don't need to change any of the configuration flags below !!
